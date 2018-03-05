@@ -19,3 +19,8 @@ $("input[type = 'text']").keypress(function(event){
     $("ul").append("<li><span><i class = 'fa fa-trash'></i></span>" + todoText + "</li>");
   }
 })
+
+// fade input in and out on + button clicking
+$(".fa-plus").click(function(){
+  $("input[type = 'text']").fadeToggle();
+});
